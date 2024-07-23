@@ -1,8 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
+const corsOptions = require('./config/corsOptions');
 const app = express();
 
 const letterRoutes = require('./routes/letterRoutes');
+
+// Cors configuration
+app.use(cors(corsOptions));
 
 // Middleware to parse JSON
 app.use(express.json());
