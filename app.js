@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const corsOptions = require('./config/corsOptions').default;
+const corsOptions = require('./config/corsOptions');
 const app = express();
 
 const letterRoutes = require('./routes/letterRoutes');
