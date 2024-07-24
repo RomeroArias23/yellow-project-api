@@ -37,14 +37,16 @@ router.post('/', (req, res) => {
   }
 
   const newLetter = new Letter({
-    addressee: addressee,
-    letter: letter,
-    // 'date' field is set to default in the model, so no need to set it here
+    addressee,
+    letter,
   });
 
   newLetter.save()
-    .then(() => res.status(201).json(newLetter))
-    .catch(err => res.status(400).json('Error: ' + err));
+    .then(savedLetter => res.status(201).json(savedLetter))
+    .catch(err => {
+      console.error('Error saving letter:', err);
+      res.status(500).json({ error: 'An error occurred while saving the letter.' });
+    });
 });
 
 module.exports = router;
