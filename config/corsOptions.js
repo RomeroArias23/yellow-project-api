@@ -6,4 +6,4 @@ const corsOptions = {
     methods: ['GET', 'POST', 'PUT', 'DELETE']  
   };
   
-  module.exports = corsOptions;
+  export default corsOptions;
