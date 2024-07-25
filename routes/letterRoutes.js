@@ -10,22 +10,21 @@ router.get('/', (req, res) => {
 });
 
 // GET letters by addressee
-router.get('/search', (req, res) => {
+router.get('/letters/search', (req, res) => {
   const { addressee } = req.query;
-
   if (!addressee) {
-    return res.status(400).json({ message: 'Addressee is required to perform a search' });
+      return res.status(400).json({ message: 'Addressee is required to perform a search' });
   }
 
   Letter.find({ addressee: new RegExp(addressee, 'i') })
-    .then(letters => {
-      if (letters.length > 0) {
-        res.json(letters);
-      } else {
-        res.status(404).json({ message: 'No letters found for the specified addressee.' });
-      }
-    })
-    .catch(err => res.status(500).json({ message: 'Error searching for letters', error: err }));
+      .then(letters => {
+          if (letters.length > 0) {
+              res.json(letters);
+          } else {
+              res.status(404).json({ message: 'No letters found for the specified addressee.' });
+          }
+      })
+      .catch(err => res.status(500).json({ message: 'Error searching for letters', error: err }));
 });
 
 
