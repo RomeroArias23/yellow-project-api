@@ -4,7 +4,7 @@ const letterSchema = new mongoose.Schema({
   addressee: {
     type: String,
     required: true,
-    match: /^[A-Z][a-z]*$/,  
+    match: /^[A-Z][a-z]*(\s[A-Z][a-z]*)*$/,
     trim: true  
   },
   letter: {
