@@ -36,17 +36,19 @@ router.post('/', (req, res) => {
     return res.status(400).json({ message: "Both addressee and letter are required." });
   }
 
+  // Create a new Letter instance
   const newLetter = new Letter({
     addressee,
-    letter,
+    letter
   });
 
   newLetter.save()
-    .then(savedLetter => res.status(201).json(savedLetter))
+    .then(savedLetter => res.status(201).json(savedLetter)) // Send JSON response
     .catch(err => {
       console.error('Error saving letter:', err);
-      res.status(500).json({ error: 'An error occurred while saving the letter.' });
+      res.status(500).json({ error: 'An error occurred while saving the letter.' }); // Ensure errors are JSON
     });
 });
+
 
 module.exports = router;
