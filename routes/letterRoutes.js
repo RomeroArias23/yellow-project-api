@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 });
 
 // GET letters by addressee
-router.get('/letters/search', (req, res) => {
+router.get('/', (req, res) => {
   const { addressee } = req.query;
   if (!addressee) {
       return res.status(400).json({ message: 'Addressee is required to perform a search' });
