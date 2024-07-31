@@ -49,45 +49,27 @@ cd server``
 
 Instala todas las dependencias necesarias ejecutando:
 
-bash
-
-Copy code
-
 `npm install` 
 
 ### Iniciar el Servidor
 
 Para iniciar el servidor en modo desarrollo, usa:
 
-bash
-
-Copy code
-
 `npm run dev` 
 
 Para producción, simplemente ejecuta:
-
-bash
-
-Copy code
 
 `npm start` 
 
 ## Contacto
 
-Si tienes alguna pregunta sobre el backend, deseas contribuir o necesitas más información, no dudes en contactarme vía email a  arias.dromero@gmail.com.
+Si tienes alguna pregunta sobre el backend, deseas contribuir o necesitas más información, no dudes en contactarme vía email a  arias.dromero@gmail.com
 
-## Licencia
-
-Este proyecto está bajo la Licencia ISC.
 
 ----------
 
 Para más detalles sobre el proyecto o para contribuir, por favor visita el repositorio del proyecto o contacta al autor.
 
-markdown
-
-Copy code
 
  ``### Consideraciones Finales
 - Asegúrate de reemplazar `URL_DEL_REPOSITORIO` con la URL real de tu repositorio de GitHub o el servicio de control de versiones que estés utilizando.
