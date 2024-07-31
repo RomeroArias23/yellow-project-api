@@ -1,5 +1,4 @@
-
-``# Backend de { YELLOW }
+# Backend de proyecto { YELLOW }
 
 ## Descripción del Proyecto
 Este backend gestiona el almacenamiento y la recuperación de "cartas" no enviadas para el proyecto { YELLOW }. Este sistema permite a los usuarios escribir y buscar cartas dirigidas a sus primeros amores. El backend se conecta a una base de datos MongoDB Atlas para almacenar de forma segura estos mensajes.
