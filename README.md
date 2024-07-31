@@ -42,7 +42,7 @@ Las dependencias del proyecto son gestionadas con `npm` y se definen en `package
 Para empezar a trabajar con este backend localmente, clona este repositorio utilizando:
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+gh repo clone RomeroArias23/yellow-project-api
 cd server`` 
 
 ### Instalar Dependencias
