@@ -67,10 +67,3 @@ Si tienes alguna pregunta sobre el backend, deseas contribuir o necesitas más i
 
 
 ----------
-
-Para más detalles sobre el proyecto o para contribuir, por favor visita el repositorio del proyecto o contacta al autor.
-
-
- ``### Consideraciones Finales
-- Asegúrate de reemplazar `URL_DEL_REPOSITORIO` con la URL real de tu repositorio de GitHub o el servicio de control de versiones que estés utilizando.
-- Este README proporciona una visión clara de las funcionalidades del backend, cómo iniciar el servidor y cómo está organizado el proyecto, facilitando la colaboración y el entendimiento del proyecto por parte de otros desarrolladores o interesados.``
