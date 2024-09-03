@@ -7,23 +7,19 @@ const mongoURL = process.env.MONGO_URL;
 const connectDB = async () => {
   try {
     await mongoose.connect(mongoURL, {
-      useNewUrlParser: true,           
-      useUnifiedTopology: true,        
-      poolSize: 10,                    
-      connectTimeoutMS: 30000,        
-      socketTimeoutMS: 45000,          
-      keepAlive: true,                
-      keepAliveInitialDelay: 300000,   
-      serverSelectionTimeoutMS: 5000,  
-      autoReconnect: true,             
-      reconnectTries: Number.MAX_VALUE, 
-      reconnectInterval: 5000          
+      useNewUrlParser: true,           // Use the new MongoDB connection string parser
+      useUnifiedTopology: true,        // Use the new MongoDB engine topology
+      maxPoolSize: 10,                 // Replaces 'poolSize'
+      serverSelectionTimeoutMS: 5000,  // Server selection timeout of 5 seconds
+      socketTimeoutMS: 45000,          // 45 seconds socket timeout
+      keepAlive: true,                 // Keep connections alive
+      keepAliveInitialDelay: 300000,   // Initial delay for keep-alive (5 minutes)
     });
 
     console.log('Database connected!');
   } catch (error) {
     console.error('Error connecting to the database:', error);
-    process.exit(1); 
+    process.exit(1); // Exit process with failure
   }
 
   // Handling disconnection
