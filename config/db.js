@@ -9,11 +9,9 @@ const connectDB = async () => {
     await mongoose.connect(mongoURL, {
       useNewUrlParser: true,           // Use the new MongoDB connection string parser
       useUnifiedTopology: true,        // Use the new MongoDB engine topology
-      maxPoolSize: 10,                 // Replaces 'poolSize'
+      maxPoolSize: 10,                 // Controls the maximum number of connections in the pool
       serverSelectionTimeoutMS: 5000,  // Server selection timeout of 5 seconds
-      socketTimeoutMS: 45000,          // 45 seconds socket timeout
-      keepAlive: true,                 // Keep connections alive
-      keepAliveInitialDelay: 300000,   // Initial delay for keep-alive (5 minutes)
+      socketTimeoutMS: 45000,  
     });
 
     console.log('Database connected!');
