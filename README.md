@@ -1,7 +1,7 @@
 # { YELLOW } Backend
 
 ## Project Description
-This backend manages the storage and retrieval of unsent "letters" for the { YELLOW } project. This system allows users to write and search for letters addressed to their first loves. The backend connects to a MongoDB Atlas database to securely store these messages.
+This backend manages the storage and retrieval of unsent "letters" for the { YELLOW } project. This system allows users to write and search for letters addressed to their first loves. The backend connects to a MongoDB Atlas database to securely and anonymously store these messages.
 
 ## Features
 
